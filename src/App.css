@@ -1,0 +1,212 @@
+:root {
+  --white: #FFFAFA;
+  --april-showers: #B8C9A9;
+  --spirits: #9BAB90;
+  --Janis: #475556;
+  --cloudWatch: #384349;
+  --motive: #31353E;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-color: var(--april-showers);
+  font-family: 'Comme', sans-serif;
+}
+#content {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.header {
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  color: var(--Janis);
+  padding: 1rem 0 2rem 0;
+  font-family: 'Sigmar', cursive;
+}
+
+.mainLeft {
+  padding: 2rem;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: -15px 13px 2px -4px var(--Janis);
+}
+
+.mainRight {
+  padding: 2rem;
+  background-color: var(--white);
+  box-shadow: 15px 13px 2px -4px var(--Janis);
+  border: 1px solid var(--motive);
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  font-family: serif;
+}
+
+/* Actual resume */
+
+.full-name-text, h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.title-text {
+  text-align: center;
+  font-style: italic;
+}
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+hr {
+  background-color: black;
+  width: 100%;
+}
+#infoForm {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+#infoForm input {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--spirits);
+}
+.expForms {
+  
+}
+.educationForm, .workXpForm, .skills-form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.educationForm input, .workXpForm input, .skills-form input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--spirits);
+}
+
+.educationForm button, .workXpForm button, .skills-form button {
+  border-radius: 8px;
+  border: none;
+  margin: 1rem 0px 1rem 0px;
+  padding: 0.5rem;
+  background-color: var(--Janis);
+}
+
+.h3 {
+  font-size: 1.2rem;
+}
+.small {
+  font-size: 0.8rem;
+}
+
+/* Skills tab */
+.my-skills {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr auto;
+}
+.my-skills div {
+  display: flex;
+}
+
+/* Education and Work experience tabs */
+
+.jobTab {
+  /*border: 1px dotted black;*/
+}
+.jobTab-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.company-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.job-position {
+  font-style: italic;
+}
+
+.schoolTab {
+  /*border: 1px dotted black;*/
+}
+.school-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.school-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.jobDelete {
+  background-color: var(--white);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  float: right;
+}
+.jobDelete:hover {
+    background-color: red;
+
+  display: inline;
+}
